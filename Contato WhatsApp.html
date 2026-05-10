@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagamento via PIX</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://hentaox.com/wp-content/uploads/2022/04/demon-slayer-hentai-kamado-nezuko-pelada-sexo.gif') center / cover no-repeat fixed;
+      color: white;
+    }
+
+    /* Overlay escuro para melhorar leitura */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: -1;
+    }
+
+    .pix-card {
+      max-width: 320px;
+      margin: 40px auto;
+      background: #111827;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+
+    .pix-key {
+      background: #1e293b;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin: 10px 0;
+    }
+
+    button {
+      background: #22c55e;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #16a34a;
+    }
+
+    .msg {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #86efac;
+      display: none;
+    }
+
+    .botao-estilo {
+      color: #FF6F00;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+      background: linear-gradient(135deg, #FFF8F0, #FFE0CC);
+      padding: 8px 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(255, 111, 0, 0.2);
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Pagamento via PIX -->
+  <div class="pix-card">
+    <h2>💳 s𝘂𝗮 𝗱𝗼𝗮𝗰̧𝗮̃𝗼  via PIX</h2>
+    <p style="font-size: 14px; color: #cbd5f5;">
+      Escaneie o QR Code ou copie a chave abaixo:
+    </p>
+
+    <div style="margin: 15px 0;">
+      <img src="Gifs/WhatsApp Image 2026-02-22 at 17.07.44.JPG"
+           alt="QR Code PIX"
+           style="width: 180px; background: white; padding: 10px; border-radius: 12px;">
+    </div>
+
+    <div id="pixKey" class="pix-key">
+      10899720404
+    </div>
+
+    <button onclick="copiarPix()">Copiar chave PIX</button>
+    <div id="msg" class="msg">✅ Chave copiada!</div>
+  </div>
+
+  <script>
+    function copiarPix() {
+      const chave = document.getElementById("pixKey").innerText;
+      navigator.clipboard.writeText(chave).then(() => {
+        const msg = document.getElementById("msg");
+        msg.style.display = "block";
+        setTimeout(() => msg.style.display = "none", 2000);
+      });
+    }
+  </script>
+
+  <!-- Botão Início -->
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="inicio.html" class="botao-estilo">Início</a>
+  </div>
+
+  <!-- Link de doação -->
+  <div style="text-align: center; margin-top: 30px; margin-bottom: 30px;">
+    <a href="#home" class="botao-estilo" style="font-size: 1.2em;">
+      <img src="Gifs/swipe-left_14109561.gif" alt="Ícone" style="max-width: 5%; height: auto;">
+      𝗳𝗮𝗰̧𝗮 𝘀𝘂𝗮 𝗱𝗼𝗮𝗰̧𝗮̃𝗼 𝘃𝗶𝗮 Pix ?
+    </a>
+  </div>
+
+</body>
+</html>

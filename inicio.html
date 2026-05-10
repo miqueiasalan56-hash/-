@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>𝓝𝓸𝓲𝓽𝓮𝓠𝓾𝓮𝓷𝓽𝓮</title>
+  <style>
+    /* Reset e base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0a1929, #0d2b3f);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Header / Navbar estilo Netflix */
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid #00c853; /* verde vibrante */
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #00c853;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .logo span.blue {
+      color: #29b6f6;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00c853;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 80vh;
+      background: url('https://www.galaxiagay.org/artigos/imagens2/Gif.3.gif') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 0 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, #00c853, #29b6f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #00c853, #29b6f6);
+      color: white;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0, 200, 83, 0.6);
+    }
+
+    /* Seções de conteúdo (galerias) */
+    .section-title {
+      margin: 2.5rem 0 1.5rem 2rem;
+      font-size: 1.8rem;
+      color: #29b6f6;
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      padding: 0 1rem 1.5rem;
+      gap: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+
+    .gallery-item {
+      scroll-snap-align: start;
+      min-width: 200px;
+      height: 280px;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      flex-shrink: 0;
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-item .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 0.5rem;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.5);
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho com menu estilo Netflix -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">𝙉𝙤𝙞𝙩𝙚<span class="blue">𝙌𝙪𝙚𝙣𝙩𝙚</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="meu.html">As Safadas</a></li>
+          <li><a href="putas.html">🔥𝙶𝚘𝚛𝚍𝚒𝚗𝚑𝚊𝚜 𝙿𝚛𝚘𝚒𝚋𝚒𝚍𝚊</a></li>
+          <li><a href="fimes.html">Assistir ONLINE</a></li>
+          <li><a href="video.html">🎬𝙥𝙤𝙧𝙣𝙤𝙜𝙧𝙖́𝙛𝙞𝙘𝙤𝙨</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Conteúdo Exclusivo em Alta Definição</h1>
+      <p>Explore as melhores cenas com qualidade premium e navegação intuitiva.</p>
+      <a href="Contato WhatsApp.html" class="btn"> 𝗳𝗮𝗰̧𝗮 𝘀𝘂𝗮 𝗱𝗼𝗮𝗰̧𝗮̃𝗼 </a>
+    </div>
+  </section>
+
+  <!-- Galerias de Conteúdo -->
+  <h2 class="section-title">Populares</h2>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="Gifs/,SSBBW.gif" alt="Vídeo 1">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gifs/39752916048d471f167e.gif" alt="Vídeo 2">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gifs/Adolescente asiática.gif" alt="Vídeo 3">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gifs/BBW GIF Gifs de sexo, Porno GIF, XXX GIFs.gif" alt="Vídeo 4">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gifs/BBW.gif" alt="Vídeo 5">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gifs/Eu aceito uma vagina.webp" alt="Vídeo 6">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gifs/Gif bbw fofa e curvilínea.webp" alt="Vídeo 7">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gifs/Jerkinjack830 - BBW gif.gif" alt="Vídeo 8">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gifs/Karla Lane Gloryhole.gif" alt="Vídeo 9">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gifs/Karla Lane.gif" alt="Vídeo 10">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gifs/ShadowyPoliteBrontosaurus.gif" alt="Vídeo 11">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gifs/rabuda-dando-o-cuzao-de-cabeca-para-baixo.gif" alt="Vídeo 12">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gifs/gifs-xxx-sexy-girls-1.gif" alt="Vídeo 13">
+      <div class="overlay"></div>
+    </div>
+    
+    </div>
+  </div>
+
+  <h2 class="section-title">Recomendados para Você</h2>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="Recomendados para Você/Capa-do-filme-senta-danada-Frente-1344.jpg" alt="Recomendado 21">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Recomendados para Você/Capa-do-filme-forum-Frente-1332.jpg" alt="Recomendado 22">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Recomendados para Você/leila-lopes.jpg" alt="Recomendado 23">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Recomendados para Você/Capa-do-filme-doutor-do-sexo-Hard-1297.jpg" alt="Recomendado 24">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Recomendados para Você/Capa-do-filme-big-bundas-brasil-Frente-1447.jpg" alt="Recomendado 25">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Recomendados para Você/Capa-do-filme-o-professor-e-as-novinhas-Hard-1413.jpg" alt="Recomendado 26">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="Recomendados para Você/1576813h.jpg" alt="Recomendado 27">
+      <div class="overlay"></div>
+    </div>
+    </div>
+    
+    <!-- Rodapé -->
+  <footer>
+    <p>&copy; 𝙉𝙤𝙞𝙩𝙚𝙌𝙪𝙚𝙣𝙩𝙚 . Todos os direitos reservados. Conteúdo exclusivo para maiores de 18 anos.</p>
+  </footer>
+
+</body>
+</html>
